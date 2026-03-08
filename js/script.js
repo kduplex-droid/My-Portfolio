@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
             const span = document.createElement("span");
 
             span.textContent = letter === " " ? "\u00A0" : letter;
-            span.style.animationDelay = `${index * 0.25}s`;
+            span.style.animationDelay = `${index * 0.125}s`;
 
             heroTitle.appendChild(span);
         });
