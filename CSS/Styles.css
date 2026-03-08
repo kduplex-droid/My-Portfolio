@@ -200,15 +200,15 @@ nav {
 }
 /* Profile image*/
 .hero-image {
-    position: absolute;   /* absolute positioning relative to the nearest positioned ancestor */
-    top: 20px;            /* distance from the top */
-    left: 20px;           /* distance from the left */
-    width: clamp(100px, 10vw, 150px);  /* responsive width */
-    height: clamp(100px, 10vw, 150px); /* responsive height */
-    border-radius: 50%;   /* circular image */
+    position: fixed;    /* fixed relative to the viewport */
+    top: 20px;          /* distance from the top of the page */
+    left: 20px;         /* distance from the left of the page */
+    width: clamp(100px, 10vw, 150px);
+    height: clamp(100px, 10vw, 150px);
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(255,106,0,0.4);
-    z-index: 1000;        /* make sure it stays above other content */
+    z-index: 1000;      /* stays on top of content */
     transition: transform 0.3s ease;
 }
 
